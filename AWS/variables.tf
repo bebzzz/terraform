@@ -7,9 +7,11 @@ variable "project_name" {}
 #------ networking variables 
 
 variable "vpc_cidr" {}
+
 variable "public_cidrs" {
-    type = "list"
+  type = "list"
 }
+
 variable "accessip" {}
 
 #------ compute variables 
@@ -21,5 +23,5 @@ variable "public_key_path" {}
 variable "server_instance_type" {}
 
 variable "instance_count" {
-    default = 1
+  default = 1
 }
